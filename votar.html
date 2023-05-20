@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Escribir un programa que dada la edad del usuario, indique
+    // si puede votar o no
+
+    // Leer o recibir la edad del usuario
+    let edadCadena = prompt("Ingresa tu edad aquí:");
+    let edad = parseInt(edadCadena);
+    //Evaluar con una expresión booleana si el usuario cumple la edad o no
+    if(edad >= 18){
+      // Imprimir el resultado
+      console.log("El usuario puede votar");
+    }else{
+      console.log("El usuario no puede votar porque es menor de edad");
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Recibe números y súmalos hasta 
+    // que recibas un número < 0
+    
+    let acumulador = 0;
+    while(true){
+      let numberRecibido = parseInt(prompt("Dame un número. Escribe 0 para terminar"));
+      
+      if(numberRecibido === 0) break;
+
+      if(isNaN(numberRecibido)) continue;
+      
+      acumulador = acumulador + numberRecibido;
+    }
+    console.log("La suma de todos los números recibidos fue "+ acumulador);
+  </script>
+</body>
+</html>
